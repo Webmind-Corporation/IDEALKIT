@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="icon" href="<?php echo findPath($root, "logoIcon.png") ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo findPath($root, "logo.png") ?>" type="image/x-icon">
 
     <link rel="stylesheet" href="<?php echo findPath($root, "default.css") ?>">
     <link rel="stylesheet" href="<?php echo findPath($root, $page['pageRef'] . ".css") ?>">
