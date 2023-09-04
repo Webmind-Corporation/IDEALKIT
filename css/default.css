@@ -50,6 +50,7 @@ nav {
 	align-items: center;
 	position: fixed;
 	padding: 0 20px;
+	z-index: 1000;
 }
 
 nav div.logo {

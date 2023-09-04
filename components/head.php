@@ -20,8 +20,8 @@
     <!-- Stylesheets -->
     <link rel="icon" href="<?php echo findPath($root, "logo.png") ?>" type="image/x-icon">
 
-    <link rel="stylesheet" href="<?php echo findPath($root, "default.css") ?>">
     <link rel="stylesheet" href="<?php echo findPath($root, $page['pageRef'] . ".css") ?>">
+    <link rel="stylesheet" href="<?php echo findPath($root, "default.css") ?>">
 
     <link rel="stylesheet" href="<?php echo findPath($root, "responsive.css") ?>">
 
