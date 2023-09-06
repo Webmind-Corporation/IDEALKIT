@@ -1,4 +1,5 @@
 header {
+	padding-top: 10vh;
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -15,10 +16,10 @@ header div.header {
 
 header form {
 	position: absolute;
-	top: 50%;
+	top: 70%;
 	left: 10vw;
 	right: 10vw;
-	height: 15vh;
+	height: 12vh;
 	width: 80vw;
 	background-color: white;
 	box-shadow: 10px 10px 10px #00000053;
@@ -27,6 +28,7 @@ header form {
 	align-items: center;
 	border-radius: 15px;
 	gap: 20%;
+	padding: 10px;
 }
 
 form div.filtres {
@@ -41,6 +43,8 @@ form div.filtres div.filtre {
 	width: 80%;
 }
 
+/*########## Ville ############*/
+
 input,
 span,
 label {
@@ -48,163 +52,11 @@ label {
   margin: 10px;
   padding: 15px;
   border: none;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 input:focus {
   outline: 0;
-}
-
-details {
-	position: relative;
-	margin: 0 1rem 0 3vw;
-	transition: all 0.3s ease-in-out;
-}
-
-details[open] {
-	z-index: 1;
-	transition: all 0.3s ease-in-out;
-}
-
-summary {
-	padding: 1rem;
-	cursor: pointer;
-	list-style: none;
-	border-bottom: 1px solid #727272;
-}
-
-summary::-webkit-details-marker {
-	display: none;
-}
-
-details[open] summary:before {
-	content: '';
-	display: block;
-	width: 100vw;
-	height: 100vh;
-	background: transparent;
-	position: fixed;
-	top: 0;
-	left: 0;
-	transition: all 0.3s ease-in-out;
-}
-
-summary:after {
-	content: '';
-	display: inline-block;
-	float: right;
-	width: 1rem;
-	height: 1rem;
-	border-bottom: 2px solid #8F8F8F;
-	border-left: 2px solid #8F8F8F;
-	border-bottom-left-radius: 2px;
-	transform: rotate(45deg) translate(50%, 0%);
-	transform-origin: center center;
-	transition: all 0.3s ease-in-out;
-}
-
-summary:focus {
-	outline: none;
-}
-
-details[open] summary:after {
-	transform: rotate(-45deg) translate(0%, 0%);
-}
-
-details ul {
-	width: 100%;
-	position: absolute;
-	top: calc(100% + .5rem);
-	left: 0;
-	padding: 1rem;
-	margin: 0;
-	box-sizing: border-box;
-	border-radius: 5px;
-	max-height: 300%;
-	overflow-y: hidden;
-	background-color: #8f8f8f30;
-    backdrop-filter: blur(5px);
-	transition: all 0.3s ease-in-out;
-}
-
-details li {
-	margin: 0;
-	padding: 1rem 0;
-	border-bottom: 1px solid #ccc;
-	list-style: none;
-	color: #8F8F8F;
-	transition: all 0.3s ease-in-out;
-}
-
-details li:first-child {
-	padding-top: 0;
-}
-
-details li:last-child {
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-/* FAKE SELECT */
-
-summary.radios {
-	counter-reset: radios;
-}
-
-summary.radios:before {
-	content: var(--selection);
-	transition: all 0.3s ease-in-out;
-}
-
-input[type=radio] {
-	counter-increment: radios;
-	appearance: none;
-	display: none;
-	font-size: 1rem;
-	padding: 0;
-	width: 80%;
-	color: #8F8F8F;
-	transition: all 0.3s ease-in-out;
-}
-
-input[type=radio]:checked {
-	display: inline;
-	--display: block;
-	transition: all 0.3s ease-in-out;
-}
-
-input[type=radio]:after {
-	content: attr(title);
-	display: inline;
-	font-size: 2rem;
-	transition: all 0.3s ease-in-out;
-}
-
-ul.list {
-	counter-reset: labels;
-}
-
-details label {
-	width: 100%;
-	display: flex;
-	cursor: pointer;
-	justify-content: space-between;
-	font-size: 1rem;
-	padding: 0;
-	color: #8F8F8F;
-}
-
-details label span {
-	--display: none;
-	display: var(--display);
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #727272;
-	border-radius: 3px;
-	font-size: 1rem;
-	padding: 0;
-	color: #8F8F8F;
-	transition: all 0.3s ease-in-out;
 }
 
 form div.filtres div.filtre.hidden {
@@ -212,7 +64,7 @@ form div.filtres div.filtre.hidden {
 }
 
 input.question {
-  font-size: 2.3rem;
+  font-size: 2rem;
   border-radius: 2px;
   margin: 0 5vw 0;
   border: none;
@@ -267,7 +119,7 @@ input.question + label > span {
   font-weight: 300;
   margin: 0;
   position: absolute;
-  color: #8F8F8F;
+  color: var(--inputTextColor);
   font-size: max(2.7vw, 2.7vh);
   top: -75px;
   left: 0px;
@@ -275,56 +127,74 @@ input.question + label > span {
   transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
 }
 
-form div.filtres div.filtre input[type="range"] {
-	-webkit-appearance: none;
+/*############## Type ###############*/
+
+form div.filtres div.filtre select {
+	width: 80%;
+	font-size: 2.3rem;
+	margin: 0 3vw 0;
+	padding: 1vh 0 2vh 2vw;
+	border: 1px solid transparent;
+	border-bottom: 1px solid var(--inputTextColor);
 	appearance: none;
-	background: transparent;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	color: var(--inputTextColor)
+}
+
+form div.filtres div.filtre select:focus {
 	outline: none;
-	margin-top: 1.5vh;
-	transform: translateY(-0.5vh);
 }
 
-form div.filtres div.filtre input[type="range"]::-webkit-slider-runnable-track {
-	height: 1vh;
-	border-radius: 50px;
-	border: none;
-	background: var(--tercaryTextColor);
-	cursor: pointer;
+select.minimal {
+	background-image:
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 20px) calc(1em - 10px),
+		calc(100% - 10px) calc(1em - 10px),
+		calc(100% - 2.5em);
+	background-size:
+		10px 10px,
+		10px 10px,
+		1px 1em;
+	background-repeat: no-repeat;
+	transition: all 0.2s ease;
+}
+  
+select.minimal:focus {
+	background-image:
+		linear-gradient(45deg, gray 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, gray 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 10px) 0.6em,
+		calc(100% - 20px) 0.6em,
+		calc(100% - 2.5em);
+	background-size:
+		10px 10px,
+		10px 10px,
+		1px 1em;
+	background-repeat: no-repeat;
+	outline: 0;
+	transition: all 0.2s ease;
+}
+  
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
 }
 
-form div.filtres div.filtre input[type="range"]::-moz-range-track {
-	height: 1vh;
-	border-radius: 50px;
-	border: none;
-	background: var(--tercaryTextColor);
-	cursor: pointer;
+select.minimal option {
+	font-weight: normal;	
+	background: var(--inputTextColor);
+	backdrop-filter: blur(10px);
 }
 
-form div.filtres div.filtre input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 2vh;
-	width: 1vh;
-	border: 1px solid var(--primaryBgColor);
-	border-radius: 50px;
-	background: var(--tercaryTextColor);
-	cursor: pointer;
-	transform: translateY(-0.5vh);
+option[id=1]:hover{
+	background: #8F8F8F;
 }
 
-form div.filtres div.filtre input[type="range"]::-moz-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 2vh;
-	width: 2vh;
-	border: none;
-	background: var(--tercaryTextColor);
-	cursor: pointer;
-}
+/*############## Prix ###############*/
 
 form div.search {
 	position: absolute;

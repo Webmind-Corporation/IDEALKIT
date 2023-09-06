@@ -36,28 +36,12 @@ include_once findPath($root, "head.php")
 					<label for="nme"><span>Où souhaitez-vous habiter ?</span></label>
 				</div>
 				<div class="filtre hidden">
-					<details class="custom-select">
-						<summary class="radios">
-							<input type="radio" name="item" id="0" title="Type de bien" checked>
-							<input type="radio" name="item" id="1" title="Appartement">
-							<input type="radio" name="item" id="2" title="Maison">
-							<input type="radio" name="item" id="3" title="Terrain">
-						</summary>
-						<ul class="list">
-							<li>
-								<label for="1">
-									Appartement
-									<span></span>
-								</label>
-							</li>
-							<li>
-								<label for="2">Maison</label>
-							</li>
-							<li>
-								<label for="3">Terrain</label>
-							</li>
-						</ul>
-					</details>
+					<select class="minimal">
+						<option value="" disabled selected>Quel type de bien ?</option>
+						<option value="1" id="1">Appartement</option>
+						<option value="2">Maison</option>
+						<option value="3">Terrain</option>
+					</select>
 				</div>
 				<div class="filtre hidden">
 					<label for="price">Prix maximum</label>
