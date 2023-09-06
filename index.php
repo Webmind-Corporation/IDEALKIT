@@ -15,7 +15,20 @@ include_once findPath($root, "head.php")
 <body>
     <?php include_once findPath($root, "navbar.php") ?>
     <header>
-		<div class="header"></div>
+		<!-- <div class="header"></div> -->
+		<div class="containerHeader">
+			<div class="leftHeader">
+				<div class="title">
+					<h1>Recherchez votre bien immobilier</h1>
+					<h2>Appartement, maison, terrain</h2>
+				</div>
+			</div>
+			<div class="rightHeader">
+				<div class="decorationshape"></div>
+				<img data-id="2" src="<?= findPath($root, "header2.webp") ?>" alt="house contruction wood">
+				<!-- <img data-id="3" src="<?= findPath($root, "header2.webp") ?>" alt="house contruction wood"> -->
+			</div>
+		</div>
 		<form class="selectZone">
 			<div class="filtres">
 				<div class="filtre">
