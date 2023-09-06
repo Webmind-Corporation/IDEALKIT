@@ -53,6 +53,70 @@ include_once findPath($root, "head.php")
 			</div>
 		</form>
 	</header>
+	<main>
+		<div class="featuredHouses">
+			<h1 class="titleFeaturedHouses">Nos maisons en kit</h1>
+			<p class="descFeaturedHouses">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequatur, eius labore ut explicabo nulla, blanditiis odio veniam similique consequuntur rerum. </p>
+			<div class="containerFeaturedHouses">
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+				<div class="house">
+					<img src="<?= findPath($root, "house.webp") ?>" alt="" class="imgHouse">
+					<div class="containerHouseInfos">
+						<h3 class="houseTitle">Lorem Ipsum</h3>
+						<p class="houseDesc"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 	<?php include_once findPath($root, "footer.php") ?>
     <?php include_once findPath($root, "jsDocs.php") ?>
 </body>

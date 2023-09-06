@@ -266,3 +266,51 @@ div.rightHeader div.decorationshape {
 	background-color: rgba(0, 111, 208, 0.33);
 	content: " ";
 }
+
+
+div.featuredHouses {
+	display: flex;
+	flex-direction: column;
+	/* background-color: pink; */
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+div.featuredHouses h1 {
+	font-size: 3.5rem;
+	margin-bottom: 2vh;
+}
+
+div.featuredHouses div.containerFeaturedHouses {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 80vw;
+	height: 100vh;
+	column-gap: 1vh;
+}
+
+div.featuredHouses div.containerFeaturedHouses div.house {
+	width: 18vw;
+	background-color: rgb(229, 229, 229);
+	border: 1px solid #ffffff7b;
+	display: flex;
+	gap: 2.5vh;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.5vh 1.5vh;
+	border-radius: 7.5px;
+	box-shadow: 0 0 20px  #ffffffc7;
+	transition: all 0.3s ease-in-out;
+}
+
+div.featuredHouses div.containerFeaturedHouses div.house:hover {
+	box-shadow: 0 0 40px  #c7c7c7e0;
+}
+
+img.imgHouse {
+	border-radius: 8px;
+	width: 100%;
+}
