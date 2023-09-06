@@ -32,3 +32,5 @@ next.addEventListener("click", function () {
 		// form.submit();
 	}
 });
+
+console.log(cities[0]);
