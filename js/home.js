@@ -2,8 +2,10 @@ filtres = document.querySelectorAll(".filtre");
 next = document.querySelector(".search");
 form = document.querySelector(".form");
 inputs = document.querySelectorAll("input");
-select = document.querySelector("select");
+select = document.querySelector("sumary");
 let count = 0;
+
+console.log(inputs);
 
 next.addEventListener("click", function () {
 	if (count == 0) {
@@ -14,16 +16,19 @@ next.addEventListener("click", function () {
 		}
 		else if (filtres[count + 1] && inputs[0].value == "")
 			alert("Veuillez remplir le champ");
-		else
-			form.submit();
 	}
 	else if (count == 1) {
-		if (filtres[count + 1] && (select.value != "" && select.value != 0)) {
-			filtres[count].classList.add("hidden");
-			filtres[count + 1].classList.remove("hidden");
-			count++;
-		}
-		else if (filtres[count + 1] && (select.value == "" || select.value == 0))
-			alert("Veuillez choisir une option");
+		filtres[count].classList.add("hidden");
+		filtres[count + 1].classList.remove("hidden");
+		count++;
+	}
+	else {
+		form = `
+			<form method="post" action="backend/search.php">
+				<input type="text" name="city" value="${inputs[0].value}">
+				<input type="text" name="type" value="${inputs[1].value}">
+				<input type="text" name="price" value="${inputs[5].value}">`;
+		console.log(form);
+		// form.submit();
 	}
 });
