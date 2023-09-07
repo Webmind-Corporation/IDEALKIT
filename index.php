@@ -29,23 +29,23 @@ include_once findPath($root, "head.php")
 				<!-- <img data-id="3" src="<?= findPath($root, "header2.webp") ?>" alt="house contruction wood"> -->
 			</div>
 		</div>
-		<form class="selectZone">
+		<form class="selectZone" method="post" action="./backend/test.php">
 			<div class="filtres">
 				<div class="filtre">
-					<input type="text" name="name" class="question" id="nme" required autocomplete="off" />
-					<label for="nme"><span>Où souhaitez-vous habiter ?</span></label>
+					<input type="text" name="localisation" class="question" id="city" required autocomplete="off" />
+					<label for="city"><span>Où souhaitez-vous habiter ?</span></label>
 				</div>
 				<div class="filtre hidden">
-					<select class="minimal">
-						<option value="" disabled selected>Quel type de bien ?</option>
-						<option value="1" id="1">Appartement</option>
+					<select class="minimal" name="type" required>
+						<option value="0" disabled selected>Quel type de bien ?</option>
+						<option value="1">Appartement</option>
 						<option value="2">Maison</option>
 						<option value="3">Terrain</option>
 					</select>
 				</div>
 				<div class="filtre hidden">
-					<label for="price">Prix maximum</label>
-					<input type="number" name="price" id="price">
+					<input type="number" name="prix" class="price" id="price" required autocomplete="off" />
+					<label for="price"><span>Prix maximun</span></label>
 				</div>
 			</div>
 			<div class="search">

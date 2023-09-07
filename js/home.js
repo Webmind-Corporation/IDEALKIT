@@ -1,11 +1,9 @@
 filtres = document.querySelectorAll(".filtre");
 next = document.querySelector(".search");
-form = document.querySelector(".form");
+form = document.querySelector("form");
 inputs = document.querySelectorAll("input");
-select = document.querySelector("sumary");
+select = document.querySelector("select");
 let count = 0;
-
-console.log(inputs);
 
 next.addEventListener("click", function () {
 	if (count == 0) {
@@ -23,14 +21,21 @@ next.addEventListener("click", function () {
 		count++;
 	}
 	else {
-		form = `
-			<form method="post" action="backend/search.php">
-				<input type="text" name="city" value="${inputs[0].value}">
-				<input type="text" name="type" value="${inputs[1].value}">
-				<input type="text" name="price" value="${inputs[5].value}">`;
-		console.log(form);
-		// form.submit();
+		if (select.value == "")
+			select.value = "0";
+		form.submit();
 	}
 });
-
-console.log(cities[0]);
+inputs.forEach(input => {
+	input.addEventListener("keydown", function(e) {
+		id = e.target.id;
+		console.log(select.value);
+		if(input.value != "" && e.keyCode == 13 && id == "city"){
+			filtres[0].classList.add("hidden");
+			filtres[1].classList.remove("hidden");
+		}
+		else if(input.value != "" && e.keyCode == 13 && id == "price"){
+			form.submit();
+		}
+	});
+});
