@@ -356,6 +356,8 @@ div.featuredHouses div.containerFeaturedHouses div.house {
 
 div.featuredHouses div.containerFeaturedHouses div.house:hover {
 	box-shadow: 0 0 40px  #c7c7c7e0;
+	transform: scale(1.02);
+	cursor: pointer;
 }
 
 img.imgHouse {
