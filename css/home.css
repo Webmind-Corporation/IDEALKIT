@@ -308,9 +308,7 @@ div.rightHeader div.decorationshape {
 	margin-top: 60%;
 	width: 100%;
 	border-radius: 25px 45px 100px 100px;
-	/* transform: rotate(-40deg) translateX(-40%) translateY(-20%) scale(0.7); */
 	transform: scale(1.1) rotate(2deg);
-	/* border-radius: 17% 83% 15% 85% / 84% 10% 90% 16% ; */
 	background-color: rgba(0, 111, 208, 0.33);
 	content: " ";
 }

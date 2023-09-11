@@ -19,8 +19,7 @@ include_once findPath($root, "head.php")
 		<div class="containerHeader">
 			<div class="leftHeader">
 				<div class="title">
-					<h1>Recherchez votre bien immobilier</h1>
-					<h2>Appartement, maison, terrain</h2>
+					<h1></h1>
 				</div>
 			</div>
 			<div class="rightHeader">
