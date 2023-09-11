@@ -1,17 +1,28 @@
+body {
+	background-color: black;
+}
+
 header {
 	padding-top: 10vh;
 	height: 100vh;
 	width: 100vw;
 	display: flex;
+	background-image: url("../assets/heroHeader.webp");
+	background-position: center;
+	background-size: cover;
 }
 
-header div.header {
-	height: 57.5vh;
+div.innerHeader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
 	width: 100vw;
-	background: url(../assets/header.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-color: #000000b0;
+	padding-top: 10vh;
+	height: 100vh;
+	width: 100vw;
+	color: white;
 }
 
 header form {
@@ -21,7 +32,7 @@ header form {
 	right: 10vw;
 	height: 12vh;
 	width: 80vw;
-	background-color: white;
+	background-color: rgba(205, 205, 205, 0.8);
 	box-shadow: 10px 10px 10px #00000053;
 	display: flex;
 	flex-flow: row;
@@ -43,11 +54,38 @@ form div.filtres div.filtre {
 	width: 80%;
 }
 
+header h1 {
+	font-size: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 7vh;
+	align-items: left;
+	margin-bottom: 5vh;
+	width: 50vw;
+	font-weight: 500;
+}
+
+header h1 span.firstLetter {
+	color: #04e0a5;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+header h1 span.firstLetter#letter1 {
+	color: #dd047f;
+}
+
+header h1 span.secondPart {
+	padding-left: 15%;
+	min-width: fit-content;
+	white-space: nowrap;
+}
+
 /*########## Ville ############*/
 
-input,
-span,
-label {
+header form input,
+header form span,
+header form label {
   display: block;
   margin: 10px;
   padding: 15px;
@@ -247,18 +285,21 @@ input.price + label > span {
 
 form div.search {
 	position: absolute;
-	right: 2%;
-	height: 60%;
-	width: 5vw;
+	right: 0;
+	height: 100%;
+	width: 7.5vw;
 	display: flex;
+	transform: scale(0.7);
 	justify-content: center;
 	align-items: center;
-	background-color: orange;
+	background-color: rgba(0, 111, 208, 0.9);
 	border-radius: 15px;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 form div.search:hover {
 	cursor: pointer;
+	transform: scale(1);
 }
 
 form div.search svg {
@@ -309,7 +350,7 @@ div.rightHeader div.decorationshape {
 	width: 100%;
 	border-radius: 25px 45px 100px 100px;
 	transform: scale(1.1) rotate(2deg);
-	background-color: rgba(0, 111, 208, 0.33);
+	background-color: rgba(0, 111, 208, 0.5);
 	content: " ";
 }
 

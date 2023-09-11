@@ -30,7 +30,7 @@ a {
 
 body {
 	font-family: 'Ubuntu', Helvetica, sans-serif;
-	background-color: var(--primaryBgColor);
+	background-color: #000;
 	background: linear-gradient(
 		to right,
 		var(--secondaryBgColor) 0% 0%,
