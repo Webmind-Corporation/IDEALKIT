@@ -1,41 +1,15 @@
-filtres = document.querySelectorAll(".filtre");
-next = document.querySelector(".search");
-form = document.querySelector("form");
-inputs = document.querySelectorAll("input");
-select = document.querySelector("select");
-let count = 0;
+selectType = document.querySelector("#project");
 
-next.addEventListener("click", function () {
-	if (count == 0) {
-		if (filtres[count + 1] && inputs[0].value != "") {
-			filtres[count].classList.add("hidden");
-			filtres[count + 1].classList.remove("hidden");
-			count++;
+
+selectType.addEventListener("change", function() {
+	if (selectType)
+	{
+		if (selectType.value == "default")
+		{
+			selectType.style.color = "#757575";
 		}
-		else if (filtres[count + 1] && inputs[0].value == "")
-			alert("Veuillez remplir le champ");
-	}
-	else if (count == 1) {
-		filtres[count].classList.add("hidden");
-		filtres[count + 1].classList.remove("hidden");
-		count++;
-	}
-	else {
-		if (select.value == "")
-			select.value = "0";
-		form.submit();
-	}
-});
-inputs.forEach(input => {
-	input.addEventListener("keydown", function(e) {
-		id = e.target.id;
-		console.log(select.value);
-		if(input.value != "" && e.keyCode == 13 && id == "city"){
-			filtres[0].classList.add("hidden");
-			filtres[1].classList.remove("hidden");
+		else {
+			selectType.style.color = "#000000";
 		}
-		else if(input.value != "" && e.keyCode == 13 && id == "price"){
-			form.submit();
-		}
-	});
+	}
 });
