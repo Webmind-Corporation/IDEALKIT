@@ -56,7 +56,7 @@ include_once findPath($root, "head.php")
 	<main>
 		<div class="message">
 			<div class="videoMessage">
-			<iframe width="600" height="380" src="https://www.maisons-revea.fr/vendor/templates/maisons-revea/img/po-2023-09-22.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+			<iframe width="600" height="380" muted src="https://www.maisons-revea.fr/vendor/templates/maisons-revea/img/po-2023-09-22.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 			</div>
 			<div class="rightSection">
 				<h1 class="headTitle">Portes ouvertes 22/09 - 23/09</h1>
@@ -99,9 +99,14 @@ include_once findPath($root, "head.php")
 				</div>
 			</div>
 		</div>
-		<div class="transitionMain">
-
+		<div class="contactSection">
+			<h2 class="titleContact">Contact</h2>
+			<h2 class="labelInputContact">Restons en contact</h2>
+			<div class="inputContact">
+				<input type="text" placeholder="john.doe@gmail.com">
+				<button class="sendContact">Envoyer</button>
 			</div>
+		</div>
 			<div class="featuredHouses">
 				<div class="headSection">
 					<h1 class="headTitle">Nos maisons en kit</h1>

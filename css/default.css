@@ -102,7 +102,7 @@ nav ul.menu li a {
 
 
 nav ul.menu li {
-	--s: .45em; /* size of the corner */
+	--s: .45em;
 	--color: #373b4434;
 	
 	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
