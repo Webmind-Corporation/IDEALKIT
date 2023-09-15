@@ -36,18 +36,6 @@ body {
 	background-color: #ffffff;
 	background-image:  linear-gradient(#26262608 1px, transparent 1px), linear-gradient(to right, hsla(0, 0%, 15%, 0.03) 1px, #ffffff 1px);
 	background-size: 20px 20px;
-	
-	/* background-color: #ffffff;
-	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #00000008, #26262608 );
-	background-size: cover; */
-	/* background-color: #000;
-	background: linear-gradient(
-		to right,
-		var(--secondaryBgColor) 0% 0%,
-		var(--tercaryBgColor) 30% 70%,
-		var(--secondaryBgColor) 100% 100%
-	); */
-	/* background: url("../assets/pattern.webp"); */
 	max-width: 100vw;
 	overflow-x: hidden;
 }
@@ -55,29 +43,44 @@ body {
 /*############## Nav bar ##############*/
 
 nav {
-	height: 10vh;
+	height: 12vh;
 	width: 100vw;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	padding: 0 20px;
+	padding: 2vh 20px;
 	z-index: 1000;
 	/* background-color: #9c9c9c16; */
 	/* backdrop-filter: blur(10px); */
+	transition: all 0.3s ease-in-out;
+}
+
+nav.sticky {
+	background-color: #ffffff;
+	box-shadow: 0 0 10px #0000001a;
 }
 
 nav div.logo {
+	height: 8vh;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav div.logo a {
 	height: 100%;
-	width: 10%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 nav div.logo a img {
-	transform: scale(0.25);
+	/* transform: scale(0.25); */
+	height: 8vh;
 }
 
 nav ul.menu {
@@ -85,7 +88,7 @@ nav ul.menu {
 	flex-flow: row;
 	justify-content: space-around;
 	align-items: center;
-	width: 60%;
+	width: 80%;
 	list-style: none;
 }
 
@@ -95,3 +98,39 @@ nav ul.menu li a {
 	color: #171717;
 	line-height: 24px;
 }
+
+
+
+nav ul.menu li {
+	--s: .45em; /* size of the corner */
+	--color: #373b4434;
+	
+	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+	color: var(#373b4434);
+	--_p: var(--s);
+	background:
+	  conic-gradient(from 90deg at 2px 2px,#0000 90deg,var(--color) 0)
+	  var(--_p) var(--_p)/calc(100% - 2px - 2*var(--_p)) calc(100% - 2px - 2*var(--_p));
+	transition: .3s linear, color 0s, background-color 0s;
+	outline: 2px solid #0000;
+	outline-offset: .6em;
+	font-size: 16px;
+  
+	border: 0;
+  
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  nav ul.menu li:hover,
+  nav ul.menu li:focus-visible{
+	--_p: 0px;
+	outline-color: var(--color);
+	outline-offset: .05em;
+  }
+  
+  nav ul.menu li:active {
+	background: var(--color);
+	color: #fff;
+  }

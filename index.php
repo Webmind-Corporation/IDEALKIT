@@ -16,7 +16,6 @@ include_once findPath($root, "head.php")
     <?php include_once findPath($root, "navbar.php") ?>
     <header>
 		<div class="innerHeader">
-
 			<div class="containerHeader">
 				<div class="leftHeader">
 					<h1><span class="firstPart part">
@@ -100,13 +99,16 @@ include_once findPath($root, "head.php")
 				</div>
 			</div>
 		</div>
-		<div class="featuredHouses">
-			<div class="headSection">
-				<h1 class="headTitle">Nos maisons en kit</h1>
-				<p class="headDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequatur, eius labore ut explicabo nulla, blanditiis odio veniam similique consequuntur rerum. </p>
+		<div class="transitionMain">
+
 			</div>
-			<div class="containerFeaturedHouses">
-				<div class="house">
+			<div class="featuredHouses">
+				<div class="headSection">
+					<h1 class="headTitle">Nos maisons en kit</h1>
+					<p class="headDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequatur, eius labore ut explicabo nulla, blanditiis odio veniam similique consequuntur rerum. </p>
+				</div>
+				<div class="containerFeaturedHouses">
+					<div class="house">
 					<img src="<?= findPath($root, "house1.webp") ?>" alt="" class="imgHouse">
 					<div class="containerHouseInfos">
 						<h3 class="houseTitle">PAV 2CH67 GI-AR-T</h3>
