@@ -27,7 +27,6 @@ include_once findPath($root, "head.php")
 				<div class="rightHeader">
 					<div class="decorationshape"></div>
 					<img data-id="2" src="<?= findPath($root, "header2.webp") ?>" alt="house contruction wood">
-					<!-- <img data-id="3" src="<?= findPath($root, "header2.webp") ?>" alt="house contruction wood"> -->
 				</div>
 			</div>
 			<div class="searchBar">
