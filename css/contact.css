@@ -12,7 +12,8 @@ header div.container div.title {
 	justify-content: center;
 	align-items: center;
 	transform: rotate(-3deg);
-	background-color: rgba(0, 111, 208, 0.33);
+	background-color: #1a91b5;
+	color: white;
 	width: 130vw;
 	margin: 10vh auto 0;
 	position: absolute;
@@ -24,6 +25,7 @@ header div.container div.title {
 header div.container div.title h1 {
 	font-size: 3rem;
 	transform: rotate(3deg);
+	text-transform: uppercase;
 }
 
 header div.container form {
@@ -34,7 +36,7 @@ header div.container form {
 	height: 50vh;
 	background-color: #3c8fa8a5;
 	transform: scale(1.1) rotate(2deg);
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	border-radius: 25px 45px 100px 100px;
 }
 
