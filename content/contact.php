@@ -15,7 +15,9 @@ include_once findPath($root, "head.php")
 	<?php include_once findPath($root, "navbar.php") ?>
 	<header>
 		<div class="container">
-			<h1 class="title">Contact</h1>
+			<div class="title">
+				<h1 class="title">Contact</h1>
+			</div>
 			<form action="" method="post">
 				<div class="containerForm">
 					<div class="form-group">

@@ -5,16 +5,34 @@ header div.container {
 	align-items: center;
 	width: 100vw;
 	height: 45vh;
+}
+
+header div.container div.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(-3deg);
 	background-color: rgba(0, 111, 208, 0.33);
+	width: 130vw;
+	margin: 10vh auto 0;
+	position: absolute;
+	top: -15vh;
+	right: -15vw;
+	padding: 20vh 20vw;
+}
+
+header div.container div.title h1 {
+	font-size: 3rem;
+	transform: rotate(3deg);
 }
 
 header div.container form {
 	position: absolute;
-	top: 33vh;
-	left: 15vw;
+	top: 35vh;
+	left: 17vw;
 	width: 70vw;
 	height: 50vh;
-	background-color: rgba(0, 111, 208, 0.5);
+	background-color: #3c8fa8a5;
 	transform: scale(1.1) rotate(2deg);
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 	border-radius: 25px 45px 100px 100px;
