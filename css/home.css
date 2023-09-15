@@ -471,7 +471,7 @@ div.featuredHouses div.containerFeaturedHouses div.house div.containerHouseInfos
 	font-weight: 600;
 }
 
-img.imgHouse {
+div.featuredHouses div.containerFeaturedHouses div.house img.imgHouse {
 	border-radius: 8px;
 	width: 100%;
 }
@@ -529,7 +529,7 @@ div.seeMoreHouses div.centerDivSeeMoreHouse {
 div.seeMoreHouses div.centerDivSeeMoreHouse h3 {
 	font-size: 2.5rem;
 	text-align: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 div.seeMoreHouses div.centerDivSeeMoreHouse p.descNumber {
@@ -553,4 +553,148 @@ div.seeMoreHouses button.bottomSeeMoreHouse {
 	align-items: center;
 	justify-content: center;
 	transition: all 0.3s ease-in-out;
+}
+
+div.rdv {
+	width: 90vw;
+	border-radius: 20px;
+	background: linear-gradient(180deg, #E7F5F7 0%, #CAE7ED 100%);
+	box-shadow: 0 0 20px  #ffffffc7;
+	padding: 7.5vh 7.5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+div.rdv div.innerRDV {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 4.5vh 4.5vh;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.rdv div.innerRDV div.leftRDV {
+	display: flex;
+	flex-direction: column;
+	gap: 7vh;
+	justify-content: center;
+	max-width: 70%;
+	min-width: 70%;
+	min-height: 100%;
+}
+
+div.rdv div.innerRDV div.leftRDV h2 {
+	font-size: 3rem;
+}
+
+div.rdv div.innerRDV div.leftRDV div.bottomLeftRDV {
+	display: flex;
+	gap: 1vw;
+	align-items: center;
+}
+
+div.rdv div.innerRDV div.leftRDV div.bottomLeftRDV button {
+	border-radius: 5px;
+	background-color: #3C8FA8;
+	border: 1px solid #3C8FA8;
+	color: white;
+	font-size: 1.1rem;
+	outline: none;
+	padding: 1vh 1vw;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+}
+
+div.rdv div.innerRDV div.rightSlider {
+	display: flex;
+	flex-direction: column;
+}
+
+div.rdv div.innerRDV div.rightSlider div.houseSlide {
+	width: 18vw;
+	background-color: rgb(241, 241, 241);
+	display: flex;
+	gap: 2vh;
+	height: fit-content;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1.5vh 1.5vh;
+	border-radius: 7.5px;
+	box-shadow: 0 0 20px  #ffffffc7;
+	border: 2px solid #1a91b5;
+	transition: all 0.3s ease-in-out;
+}
+
+div.rdv div.innerRDV div.rightSlider div.houseSlide img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+div.rdv div.innerRDV div.rightSlider div.houseSlide div.bottomInfos {
+	display: flex;
+	flex-direction: column;
+}
+
+div.rdv div.innerRDV div.rightSlider div.houseSlide div.bottomInfos p.housePrice {
+	color: #000000;
+	font-weight: 600;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1vh;
+}
+
+div.rdv div.innerRDV div.rightSlider div.houseSlide div.bottomInfos p.houseDesc span.housePrice {
+	color: #000000;
+	font-weight: 600;
+}
+
+div.faq {
+	display: flex;
+	width: 100vw;
+	justify-content: space-evenly;
+}
+
+div.faq h3.faqTitle {
+	font-size: 2.5rem;font-family: 'DM Serif Display', serif;
+}
+
+div.questions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 60vw;
+	width: 60vw;
+}
+
+div.questions details.question {
+	display: flex;
+    flex-direction: column;
+    margin: 2vh 0;
+	border-bottom: 2px solid #27272746;
+	padding-bottom: 4vh;
+}
+
+div.questions details.question:first-of-type {
+	border-top: 2px solid #27272746;
+	padding-top: 4vh;
+}
+
+div.questions details.question summary {
+	font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+div.questions details.question p.answer {
+	font-size: 1.2rem;
+    line-height: 4.5vh;
+    font-weight: 300;
+	padding-top: 2vh;
 }

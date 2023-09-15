@@ -174,6 +174,48 @@ include_once findPath($root, "head.php")
 				</div>
 			</div>
 		</div>
+		<div class="rdv">
+			<div class="innerRDV">
+				<div class="leftRDV">
+					<h2 class="titleRDV">Apprenons à se connaître !</h2>
+					<div class="bottomLeftRDV">
+						<button class="aboutButton">Prendre RDV</button>
+						<p class="rightTextRDV">Oû venez nous voir au 558 route de Clisson à Vertou en face du Brico Dépot</p>
+					</div>
+				</div>
+				<div class="rightSlider">
+					<div class="houseSlide">
+						<img src="<?= findPath($root, "house2.webp") ?>" alt="" class="houseImg">
+						<div class="bottomInfos">
+							<p class="housePrice">216 300€</p>
+							<p class="houseDesc">Chambres : <span class="housePrice">4</span></p>
+							<p class="houseDesc">Superficie : <span class="housePrice">144m<sup>2<sup><span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="faq">
+			<h3 class="faqTitle">Foire Aux <span class="blue">Questions</span></h3>
+			<div class="questions">
+				<details class="question">
+					<summary class="titleQuestion">Qu'est ce qu'une "Maison en kit" ?</summary>
+					<p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero delectus similique ducimus doloremque illum maiores necessitatibus dicta atque quibusdam quidem assumenda, vitae qui ut repudiandae itaque accusantium cupiditate ipsa.</p>
+				</details>
+				<details class="question">
+					<summary class="titleQuestion">Est-ce aussi solide qu'une "Vrai Maison" ?</summary>
+					<p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero delectus similique ducimus doloremque illum maiores necessitatibus dicta atque quibusdam quidem assumenda, vitae qui ut repudiandae itaque accusantium cupiditate ipsa.</p>
+				</details>
+				<details class="question">
+					<summary class="titleQuestion">Quel est le déroulé de la construction d'une maison en kit ?</summary>
+					<p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero delectus similique ducimus doloremque illum maiores necessitatibus dicta atque quibusdam quidem assumenda, vitae qui ut repudiandae itaque accusantium cupiditate ipsa.</p>
+				</details>
+				<details class="question">
+					<summary class="titleQuestion">Ou puis-je faire construire ma maison en kit ?</summary>
+					<p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos libero delectus similique ducimus doloremque illum maiores necessitatibus dicta atque quibusdam quidem assumenda, vitae qui ut repudiandae itaque accusantium cupiditate ipsa.</p>
+				</details>
+			</div>
+		</div>
 	</main>
 	<?php include_once findPath($root, "footer.php") ?>
     <?php include_once findPath($root, "jsDocs.php") ?>
