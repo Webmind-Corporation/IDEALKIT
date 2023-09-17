@@ -20,7 +20,6 @@ header div.container div.title {
 	top: -20vh;
 	right: -15vw;
 	padding: 25vh 20vw 10vh;
-	z-index: 2;
 }
 
 header div.container div.title h1 {
@@ -30,19 +29,23 @@ header div.container div.title h1 {
 }
 
 header div.container form {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10vh;
 	position: absolute;
 	top: 45vh;
 	left: 17vw;
 	width: 70vw;
-	height: 50vh;
-	transform: scale(1.1) rotate(2deg);
-	border-radius: 25px 45px 100px 100px;
-	z-index: 1;
+	height: 70vh;
 }
 
 header div.container form div.containerForm {
-	transform: scale(1.1) rotate(-2deg);
 	display: flex;
+	background-color: rgb(245, 245, 245);
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px #00000029;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
@@ -62,6 +65,7 @@ header div.container form div.containerForm input {
 	margin: 0 3vw;
 	outline: none;
 	transition: all 0.3s ease-in-out;
+	font-family: 'Raleway';
 }
 
 header div.container form div.containerForm input:focus {
@@ -79,8 +83,33 @@ header div.container form div.containerForm textarea {
 	margin: 0 3vw;
 	resize: none;
 	outline: none;
+	font-family: 'Raleway';
 }
 
 header div.container form div.containerForm textarea:focus {
 	border-bottom: 2px solid #1e1e1f;
+}
+
+header div.container form button.buton {
+	width: 15vw;
+	height: 5vh;
+	font-size: 1.1rem;
+	background-color: #1a91b5;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 10px;
+	margin: 0 3vw;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+	font-family: 'Raleway';
+}
+
+header div.container form button.buton:hover {
+	background-color: #757575;
+	cursor: pointer;
+}
+
+main {
+	height: 75vh;
 }

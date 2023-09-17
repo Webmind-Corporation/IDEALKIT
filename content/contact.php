@@ -39,7 +39,11 @@ include_once findPath($root, "head.php")
 						<textarea name="message" placeholder="Message" class="form-control" required></textarea>
 					</div>
 				</div>
+				<button class="buton">Envoyer</button>
 			</form>
 		</div>
 	</header>
+	<main></main>
+	<?php include_once findPath($root, "footer.php") ?>
+	<?php include_once findPath($root, "jsDocs.php") ?>
 </body>
