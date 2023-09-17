@@ -17,9 +17,10 @@ header div.container div.title {
 	width: 130vw;
 	margin: 10vh auto 0;
 	position: absolute;
-	top: -15vh;
+	top: -20vh;
 	right: -15vw;
-	padding: 20vh 20vw;
+	padding: 25vh 20vw 10vh;
+	z-index: 2;
 }
 
 header div.container div.title h1 {
@@ -30,14 +31,13 @@ header div.container div.title h1 {
 
 header div.container form {
 	position: absolute;
-	top: 35vh;
+	top: 45vh;
 	left: 17vw;
 	width: 70vw;
 	height: 50vh;
-	background-color: #3c8fa8a5;
 	transform: scale(1.1) rotate(2deg);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	border-radius: 25px 45px 100px 100px;
+	z-index: 1;
 }
 
 header div.container form div.containerForm {
@@ -54,22 +54,33 @@ header div.container form div.containerForm {
 header div.container form div.containerForm input {
 	width: 15vw;
 	height: 5vh;
-	border-radius: 10px;
+	font-size: 1.1rem;
+	background-color: transparent;
 	border: none;
+	border-bottom: 2px solid #757575;
 	padding: 10px;
 	margin: 0 3vw;
+	outline: none;
+	transition: all 0.3s ease-in-out;
 }
 
 header div.container form div.containerForm input:focus {
-	outline: none;
+	border-bottom: 2px solid #1e1e1f;
 }
 
 header div.container form div.containerForm textarea {
 	width: 40vw;
 	height: 15vh;
-	border-radius: 10px;
+	font-size: 1.1rem;
+	background-color: transparent;
 	border: none;
+	border-bottom: 2px solid #757575;
 	padding: 10px;
 	margin: 0 3vw;
 	resize: none;
+	outline: none;
+}
+
+header div.container form div.containerForm textarea:focus {
+	border-bottom: 2px solid #1e1e1f;
 }
