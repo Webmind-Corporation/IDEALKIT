@@ -33,7 +33,7 @@ header div.container form {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	gap: 10vh;
+	gap: 7vh;
 	position: absolute;
 	top: 45vh;
 	left: 17vw;
@@ -74,7 +74,7 @@ header div.container form div.containerForm input:focus {
 
 header div.container form div.containerForm textarea {
 	width: 40vw;
-	height: 15vh;
+	height: 5vh;
 	font-size: 1.1rem;
 	background-color: transparent;
 	border: none;
@@ -106,10 +106,11 @@ header div.container form button.buton {
 }
 
 header div.container form button.buton:hover {
-	background-color: #757575;
+	background-color: #16718c;
 	cursor: pointer;
 }
 
 main {
 	height: 75vh;
+	margin-bottom: 2vh;
 }
