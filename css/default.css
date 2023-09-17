@@ -137,3 +137,107 @@ nav ul.menu li {
 	background: var(--color);
 	color: #fff;
   }
+
+
+footer {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+footer div.round {
+	width: 50vw;
+	height: 15vw;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -7.5vw;
+	left: 25vw;
+	/* background-color: #0093dcab; */
+}
+
+
+footer div.innerFooter {
+	backdrop-filter: blur(100px);
+	padding: 2vh 4vw;
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+footer div.innerFooter div.topFooter {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer div.innerFooter div.topFooter div.leftTopFooter {
+	height: 10vh;
+}
+
+footer div.innerFooter div.topFooter div.leftTopFooter img {
+	height: 100%;
+}
+
+footer div.innerFooter div.topFooter div.rightTopFooter {
+	display: flex;
+	gap: 3vw;
+}
+
+footer div.innerFooter div.midFooter {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 2vw;
+	padding: 3vh 0;
+}
+
+footer div.innerFooter div.midFooter div.containerFooter {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+footer div.innerFooter div.midFooter div.containerFooter:first-of-type {
+	min-width: 20vw;
+	margin-right: 4vh;
+}
+
+footer div.innerFooter div.midFooter div.containerFooter ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5vh;
+}
+
+footer div.innerFooter div.midFooter div.containerFooter p.title {
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: #171717;
+	margin-bottom: 1vh;
+}
+
+footer div.innerFooter div.midFooter div.containerFooter ul li {
+	font-weight: 400;
+	font-size: 1rem;
+	color: #1717179f;
+	transition: all 0.3s ease-in-out;
+}
+
+footer div.innerFooter div.midFooter div.containerFooter ul li:hover {
+	color: #171717;
+}
+
+footer div.bottomFooter {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 2px solid #2121217d;
+	padding: 5vh 0 1vh;
+}
