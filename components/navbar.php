@@ -7,6 +7,6 @@
 		<li><a href="<?php echo findPath($root, "nos_projets") ?>">Nos modèles de maisons</a></li>
 		<li><a href="<?php echo findPath($root, "about_us") ?>">Qui sommes nous ?</a></li>
 		<li><a href="<?php echo findPath($root, "contact") ?>">Contacter</a></li>
-		<li><a href="#">Mon compte</a></li>
+		<li><a href="<?php echo findPath($root, "login") ?>">Mon compte</a></li>
 	</ul>
 </nav>

@@ -103,6 +103,7 @@ header div.container form button.buton {
 	outline: none;
 	transition: all 0.3s ease-in-out;
 	font-family: 'Raleway';
+	box-shadow: 0px 0px 50px #00000029;
 }
 
 header div.container form button.buton:hover {
