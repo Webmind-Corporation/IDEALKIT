@@ -1,4 +1,122 @@
 header {
 	height: 100vh;
 	width: 100vw;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+header div.container {
+	margin-top: 5vh;
+	height: 70vh;
+	width: 70vw;
+	display: flex;
+	background-color: rgb(245, 245, 245);
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px #00000029;
+	flex-flow: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 2vh;
+}
+
+header div.container h1.title {
+	font-size: 2.7rem;
+	text-transform: uppercase;
+}
+
+header div.container div.select {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5vw;
+	font-size: 1.2rem;
+}
+
+header div.container div.select p {
+	transition: all 0.3s ease-in-out;
+	color: #757575;
+	border-bottom: 2px solid transparent;
+}
+
+header div.container div.select p:hover {
+	cursor: pointer;
+	color: #1e1e1f;
+}
+
+header div.container div.select p.underline {
+	border-bottom: 2px solid #757575;
+}
+
+.login {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5vh;
+	height: 30vh;
+	width: 50vw;
+}
+
+.register {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2vh;
+	height: 30vh;
+	width: 50vw;
+}
+
+.hidden {
+	display: none;
+}
+
+header div.container form div.form-group {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2vh 0;
+}
+
+header div.container form div.form-group input {
+	width: 15vw;
+	height: 5vh;
+	font-size: 1.1rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #757575;
+	padding: 10px;
+	margin: 0 3vw;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+	font-family: 'Raleway';
+}
+
+header div.container form div.form-group input:focus {
+	border-bottom: 2px solid #1e1e1f;
+}
+
+header div.container button {
+	width: 15vw;
+	height: 5vh;
+	font-size: 1.1rem;
+	background-color: #1a91b5;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 10px;
+	margin: 0 3vw;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+	font-family: 'Raleway';
+	box-shadow: 0px 0px 40px #00000029;
+}
+
+header div.container button:hover {
+	background-color: #16718c;
+	cursor: pointer;
 }
