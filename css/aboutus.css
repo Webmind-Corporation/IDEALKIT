@@ -88,7 +88,7 @@ main div.ourTeam {
     gap: 7.5vh 0;
 }
 
-main div.ourTeam div.headSection {
+div.headSection {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -97,34 +97,50 @@ main div.ourTeam div.headSection {
     gap: 3vh;
 }
 
-main div.ourTeam div.headSection h2.teamTitle {
+div.headSection h2.headTitle {
     font-size: 2.5rem;
     text-align: center;
     color: #4081c2;
 }
 
-main div.ourTeam div.headSection p.teamDesc {
+div.headSection p.headDesc {
     width: 80%;
     text-align: center;
     color: #4a4a4ad8;
 }
 
-main div.ourTeam div.headSection div.teamButtons {
+div.headSection div.headButtons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2vw;
 }
 
-main div.ourTeam div.headSection div.teamButtons button {
+div.headSection div.headButtons button {
     border: 2px solid #e4e4e4;
     background: #fff;
     padding: 1.8vh 1.5vw;
     border-radius: 10px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-main div.ourTeam div.headSection div.teamButtons button.primary {
+div.headSection div.headButtons button.primary {
+    padding: 1.8vh 1.5vw;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4081c2;
+    border: 2px solid #4081c2;
+    color: #fff;
+    font-weight: 500;
+}
+
+button.primary {
+    padding: 1.8vh 1.5vw;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
     background-color: #4081c2;
     border: 2px solid #4081c2;
     color: #fff;
@@ -132,7 +148,7 @@ main div.ourTeam div.headSection div.teamButtons button.primary {
 }
 
 
-main div.ourTeam div.containerTeam {
+div.containerSection {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -141,7 +157,7 @@ main div.ourTeam div.containerTeam {
     gap: 2vw;
 }
 
-main div.ourTeam div.containerTeam div.mate {
+main div.ourTeam div.containerSection div.mate {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -149,19 +165,19 @@ main div.ourTeam div.containerTeam div.mate {
     gap: 2vh;
 }
 
-main div.ourTeam div.containerTeam div.mate div.containerPP {
+main div.ourTeam div.containerSection div.mate div.containerPP {
     width: 18vw;
     height: 18vw;
     overflow: hidden;
 }
 
-main div.ourTeam div.containerTeam div.mate div.containerPP img {
+main div.ourTeam div.containerSection div.mate div.containerPP img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-main div.ourTeam div.containerTeam div.mate div.bottomContent {
+main div.ourTeam div.containerSection div.mate div.bottomContent {
     width: 18vw;
     display: flex;
     justify-content: center;
@@ -170,12 +186,133 @@ main div.ourTeam div.containerTeam div.mate div.bottomContent {
     gap: 0.5vh;
 }
 
-main div.ourTeam div.containerTeam div.mate div.bottomContent p.mateName {
+main div.ourTeam div.containerSection div.mate div.bottomContent p.mateName {
     font-weight: 600;
     font-size: 1.1rem;
 }
 
-main div.ourTeam div.containerTeam div.mate div.bottomContent p.mateJob {
+main div.ourTeam div.containerSection div.mate div.bottomContent p.mateJob {
     color: #4081c2;
     font-weight: 500;
+}
+
+main div.ourSkills {
+    width: 90%;
+    display: flex;
+    margin: 10vh auto 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5vh 0;
+}
+
+main div.ourSkills div.containerSection div.skill {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+main div.ourSkills div.containerSection div.skill div.skillIcon {
+    width: 20%;
+}
+
+main div.ourSkills div.containerSection div.skill div.skillIcon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    fill: #4081c2;
+}
+
+main div.ourSkills div.containerSection div.skill div.bottomContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+main div.ourSkills div.containerSection div.skill div.bottomContent p.skillName {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+main div.steps {
+    width: 90%;
+    display: flex;
+    margin: 10vh auto 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5vh 0;
+}
+
+div.containerSteps {
+    width: 50vw;
+}
+
+div.step {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #3a6ed5 0%, #3ac8d5 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    counter-increment: section;
+    position: relative;
+    color: #34435e;
+}
+
+div.step h1.stepTitle {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+div.step:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: #34435e;
+    text-align: center;
+    line-height: 1.25em;
+    color: #fff;
+    font-size: 1em;
+}
+div.step:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+}
+div.step:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+}
+div.step:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+}
+div.step:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+}
+div.step:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+div.step:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
