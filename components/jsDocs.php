@@ -5,5 +5,8 @@
 <?php }
 if ($page["pageRef"] == "login") { ?>
 	<script src="<?php echo findPath($root, "login.js") ?>"></script>
+<?php }
+if ($page["pageRef"] == "account") { ?>
+	<script src="<?php echo findPath($root, "account.js") ?>"></script>
 <?php } ?>
 <script src="<?php echo findPath($root, "responsive.js") ?>"></script>
