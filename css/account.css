@@ -38,7 +38,7 @@ header .container .left {
 	z-index: 1;
 }
 
-header .container .left .menu {
+header .container .left .select {
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
@@ -50,11 +50,11 @@ header .container .left .menu {
 	z-index: 3;
 }
 
-header .container .left .menu:hover {
+header .container .left .select:hover {
 	cursor: pointer;
 }
 
-header .container .left .menu svg {
+header .container .left .select svg {
 	height: 70%;
 	width: 20%;
 	object-fit: cover;

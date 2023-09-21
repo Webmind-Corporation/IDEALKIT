@@ -1,5 +1,5 @@
 bar = document.querySelector('.line');
-menus = document.querySelectorAll('.menu');
+selects = document.querySelectorAll('.select');
 favoris = document.querySelector('.favoris');
 account = document.querySelector('.account');
 settings = document.querySelector('.settings');
@@ -40,7 +40,7 @@ function toleft(actuel, next) {
 	actuel.classList.remove('focus');
 }
 
-if (menus[1].classList.contains('focus')) {
+if (selects[0].classList.contains('focus')) {
 	bar.style.left = '26%';
 	bar.style.width = '8vw';
 	if (account.classList.contains('focus')) {
@@ -48,7 +48,7 @@ if (menus[1].classList.contains('focus')) {
 	} else if (settings.classList.contains('focus')) {
 		toRight(settings, favoris);
 	}
-} else if (menus[2].classList.contains('focus')) {
+} else if (selects[1].classList.contains('focus')) {
 	bar.style.left = '43%';
 	bar.style.width = '11vw';
 	if (favoris.classList.contains('focus')) {
@@ -56,7 +56,7 @@ if (menus[1].classList.contains('focus')) {
 	} else if (settings.classList.contains('focus')) {
 		toRight(settings, account);
 	}
-} else if (menus[3].classList.contains('focus')) {
+} else if (selects[2].classList.contains('focus')) {
 	bar.style.left = '62%';
 	bar.style.width = '10.5vw';
 	if (favoris.classList.contains('focus')) {
@@ -67,9 +67,9 @@ if (menus[1].classList.contains('focus')) {
 }
 
 
-menus.forEach(menu => {
-	menu.addEventListener('click', () => {
-		if (menu == menus[1]) {
+selects.forEach(select => {
+	select.addEventListener('click', () => {
+		if (select == selects[0]) {
 			bar.style.left = '26%';
 			bar.style.width = '8vw';
 			if (account.classList.contains('focus')) {
@@ -77,7 +77,7 @@ menus.forEach(menu => {
 			} else if (settings.classList.contains('focus')) {
 				toRight(settings, favoris);
 			}
-		} else if (menu == menus[2]) {
+		} else if (select == selects[1]) {
 			bar.style.left = '43%';
 			bar.style.width = '11vw';
 			if (favoris.classList.contains('focus')) {
@@ -85,7 +85,7 @@ menus.forEach(menu => {
 			} else if (settings.classList.contains('focus')) {
 				toRight(settings, account);
 			}
-		} else if (menu == menus[3]) {
+		} else if (select == selects[2]) {
 			bar.style.left = '62%';
 			bar.style.width = '10.5vw';
 			if (favoris.classList.contains('focus')) {
