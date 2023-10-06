@@ -18,7 +18,8 @@ include_once findPath($root, "head.php")
 		<div class="innerHeader">
 			<div class="containerHeader">
 				<div class="leftHeader">
-					<h1><span class="firstPart part">
+					<h1>
+						<span class="firstPart part">
 						<span class="firstLetter" id="letter0">Créez</span> l'Extérieur,</span>
 						<span class="secondPart part"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h147.692v-203.077q0-13.731 9.289-23.019 9.288-9.289 23.019-9.289h120q13.731 0 23.019 9.289 9.289 9.288 9.289 23.019V-200H720v-347.692q0-6.154-2.692-11.154-2.693-5-7.308-8.846L494.615-730q-6.154-5.385-14.615-5.385T465.385-730L250-567.692q-4.615 3.846-7.308 8.846-2.692 5-2.692 11.154V-200Zm-40 0v-347.692q0-15.347 6.865-29.077 6.866-13.731 18.981-22.616l215.385-163.077q16.907-12.923 38.646-12.923 21.738 0 38.892 12.923l215.385 163.077q12.115 8.885 18.981 22.616Q760-563.039 760-547.692V-200q0 16.077-11.961 28.039Q736.077-160 720-160H564.615q-13.73 0-23.019-9.288-9.288-9.289-9.288-23.019v-203.077H427.692v203.077q0 13.73-9.288 23.019Q409.115-160 395.385-160H240q-16.077 0-28.039-11.961Q200-183.923 200-200Zm280-268.462Z"/></svg><span class="firstLetter" id="letter1">Imaginez</span> l'Intérieur.</span>
 					</h1>
@@ -56,7 +57,7 @@ include_once findPath($root, "head.php")
 	<main>
 		<div class="message">
 			<div class="videoMessage">
-			<iframe width="600" height="380" muted src="https://www.maisons-revea.fr/vendor/templates/maisons-revea/img/po-2023-09-22.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+			<!-- <iframe width="600" height="380" muted src="https://www.maisons-revea.fr/vendor/templates/maisons-revea/img/po-2023-09-22.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe> -->
 			</div>
 			<div class="rightSection">
 				<h1 class="headTitle">Portes ouvertes 22/09 - 23/09</h1>

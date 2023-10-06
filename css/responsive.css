@@ -1,3 +1,27 @@
-@media screen and (max-width: 500px) {
-	
+@media screen and (max-width: 750px) {
+	header h1 span.secondPart {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1340px) {
+	div.leftHeader span {
+		border-radius: 15px;
+		padding: 2%;
+		backdrop-filter: blur(10px);
+	}
+}
+
+@media screen and (max-width: 1083px) {
+	div.rightHeader {
+		display: none;
+	}
+
+	div.leftHeader {
+		margin-right: 20vw;
+	}
+
+	div.leftHeader span {
+		backdrop-filter: none;
+	}
 }
