@@ -23,6 +23,7 @@ html {
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 a {
@@ -138,6 +139,60 @@ nav ul.menu li:focus-visible {
 nav ul.menu li:active {
 	background: var(--color);
 	color: #fff;
+}
+
+/*############### BURGER ###############*/
+
+nav.mobile button.menu{
+	width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    appearance: none; 
+    moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+nav.mobile button.menu span.bar {
+	border-top: 3px solid #000;
+    display: block;
+    transition: margin 0.5s, transform 0.5s;
+    width: 50px;
+}
+
+span.bar:nth-of-type(2) {
+	margin: 10px 0;
+}
+
+nav.mobile button.menu.active {
+	transform: rotate(180deg);
+}
+
+nav.mobile button.menu.active span.bar:first-of-type {
+	transform: rotate(45deg);
+}
+
+nav.mobile button.menu.active span.bar:nth-of-type(2) {
+	margin: -3px 0;
+	opacity: 0;
+	transform: rotate(45deg);
+}
+
+nav.mobile button.menu.active span.bar:last-of-type {
+	transform: rotate(-45deg);
+}
+
+nav.mobile ul.menu-mobile {
+	display: none
 }
 
 

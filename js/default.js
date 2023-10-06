@@ -46,3 +46,13 @@ window.addEventListener("resize", function () {
 	console.log(window.innerWidth);
 	checkResize();
 });
+
+
+if (window.innerWidth < 948) {
+	menu = document.querySelector("button.menu");
+	console.log(menu);
+	menu.addEventListener("click", function () {
+		console.log("clicked");
+		menu.classList.toggle("active");
+	});
+}
