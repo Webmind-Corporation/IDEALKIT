@@ -24,4 +24,10 @@
 	div.leftHeader span {
 		backdrop-filter: none;
 	}
+
+	div.message {
+		margin-left: 0;
+		transform: rotate(0);
+		width: 100vw;
+	}
 }

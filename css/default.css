@@ -14,16 +14,11 @@
 	--color: #fff;
 }
 
-html {
-	overflow-x: hidden;
-}
-
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 
 a {
@@ -150,6 +145,7 @@ nav.mobile button.menu{
     display: block;
     cursor: pointer;
     background-color: transparent;
+	z-index: 1000;
 }
 
 button {
@@ -165,8 +161,12 @@ button {
 nav.mobile button.menu span.bar {
 	border-top: 3px solid #000;
     display: block;
-    transition: margin 0.5s, transform 0.5s;
+    transition: margin 0.5s, transform 0.5s, border-top 1s;
     width: 50px;
+}
+
+nav.mobile button.menu.active span.bar {
+	border-top: 3px solid #fff;
 }
 
 span.bar:nth-of-type(2) {
@@ -191,8 +191,57 @@ nav.mobile button.menu.active span.bar:last-of-type {
 	transform: rotate(-45deg);
 }
 
-nav.mobile ul.menu-mobile {
-	display: none
+nav.mobile div.menu {
+	display: flex;
+	top: -110px;
+	position: fixed;
+	border-radius: 50px;
+	right: -110px;
+	height: 100px;
+	width: 100px;
+	background-color: #1a91b5;
+	z-index: 999;
+	transition: all 1s ease-in-out;
+	overflow: hidden;
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+nav.mobile div.menu.active {
+	transform: scale(50);
+	top: 0;
+	right: 0;
+}
+
+nav.mobile div.menu ul.menu-mobile {
+	display: none;
+}
+
+nav.mobile div.menu.active ul.menu-mobile {
+    display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	font-size: 150%;
+	font-weight: 400;
+	gap: 5%;
+	z-index: 1000;
+	transition: all 0.4s ease;
+}
+
+nav.mobile div.menu ul.menu-mobile li {
+	font-weight: 600;
+	font-size: 1rem;
+	color: #fff;
+}
+
+nav.mobile div.menu ul.menu-mobile li a {
+	color: #fff;
 }
 
 
